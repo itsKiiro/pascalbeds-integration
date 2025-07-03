@@ -1,4 +1,4 @@
-console.log('test');
+console.log('testNew');
 
 let currentProduct;
 let iframeSrc;
