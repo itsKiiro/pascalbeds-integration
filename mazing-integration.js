@@ -1,4 +1,4 @@
-console.log('testNew1');
+console.log('jsDelivr cdn');
 
 let currentProduct;
 let iframeSrc;
