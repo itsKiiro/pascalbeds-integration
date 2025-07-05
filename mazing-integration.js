@@ -1,4 +1,4 @@
-console.log('jsDelivr cdn');
+console.log('Mazing integration v1.1');
 
 let currentProduct;
 let iframeSrc;
