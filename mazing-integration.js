@@ -275,7 +275,7 @@ const initializeMazing = async () => {
     console.log('Mazing initialized with clean DOM.');
 
 
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth > 768) {
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimeout);
 
