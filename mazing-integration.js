@@ -275,14 +275,16 @@ const initializeMazing = async () => {
     console.log('Mazing initialized with clean DOM.');
 
 
-    window.addEventListener('resize', () => {
-        clearTimeout(resizeTimeout);
+    if (window.innerWidth <= 768) {
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
 
-        resizeTimeout = setTimeout(() => {
-            console.log('Triggering Mazing reinsertion after resize settled.');
-            handleResizeReinsertion();
-        }, 800);
-    });
+            resizeTimeout = setTimeout(() => {
+                console.log('Triggering Mazing reinsertion after resize settled.');
+                handleResizeReinsertion();
+            }, 800);
+        });
+    }
 
 };
 
